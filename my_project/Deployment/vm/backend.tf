@@ -6,9 +6,3 @@ terraform {
     key                  = "aterraform.tfstate"
   }
 }
-
-module "resource_group" {
-  source   = "../../Module/resource_group"
-  name     = var.name
-  location = var.location
-}

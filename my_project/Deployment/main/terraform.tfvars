@@ -1,0 +1,10 @@
+rg_name                = "ankurbackend03"
+location               = "East US"
+vnet_name              = "my-vnet1"
+address_space          = ["10.0.0.0/16"]
+subnet_name            = "my-subnet1"
+subnet_address_prefixes = ["10.0.1.0/24"]
+vm_name                = "myvm1"
+vm_size                = "Standard_DC1s_v3"
+admin_username         = "azureuser"
+admin_password         = "YourPassword123!"
