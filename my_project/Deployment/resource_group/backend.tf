@@ -1,14 +1,8 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "ankurbackend01"
-    storage_account_name = "ankur01storage01ad01"
-    container_name       = "ankurstorage01container01"
-    key                  = "aterraform.tfstate"
+    resource_group_name  = "Bestel"
+    storage_account_name = "bestelbackend"
+    container_name       = "bestelbackend"
+    key                  = "basic.tfstate"
   }
-}
-
-module "resource_group" {
-  source   = "../../Module/resource_group"
-  name     = var.name
-  location = var.location
 }

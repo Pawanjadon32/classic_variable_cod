@@ -1,7 +1,0 @@
-name                = "myvm"
-resource_group_name = "ankurbackend01"
-location            = "East US"
-vm_size             = "Standard_DS1_v2"
-admin_username      = "azureuser"
-admin_password      = "YourPassword123!"
-subnet_id           = "<your-subnet-id>"
