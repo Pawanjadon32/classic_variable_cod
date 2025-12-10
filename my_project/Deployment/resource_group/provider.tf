@@ -16,12 +16,12 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "Bestel"
-    storage_account_name = "bestelbackend"
-    container_name       = "bestelbackend"
-    key                 = "basic.tfstate"
+    resource_group_name  = "backend_resource_group_name"
+    storage_account_name = "backend_storage_account_name"
+    container_name       = "backend_container_name "
+    key                 = "key"
     subscription_id     = "__backend_subscription_id__"
-    tenant_id           = "__tenant_id__"
+    tenant_id           = "__backend_tenant_id__"
     client_id           = "__backend_client_id__"
     client_secret       = "__backend_client_secret__"
     use_azuread_auth    = true
