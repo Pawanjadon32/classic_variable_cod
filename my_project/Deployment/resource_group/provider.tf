@@ -34,6 +34,7 @@ provider "azurerm" {
   tenant_id       = "__tenant_id__"
   client_id       = "__client_id__"
   client_secret   = "__client_secret__"
+  skip_provider_registration = true
 }
 
 provider "azuread" {
