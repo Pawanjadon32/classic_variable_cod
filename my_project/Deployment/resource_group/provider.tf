@@ -20,8 +20,8 @@ terraform {
     storage_account_name = "backend_storage_account_name"
     container_name       = "backend_container_name "
     key                 = "key"
-    subscription_id     = "b4461466-1e6b-4be2-bb70-1e96a72a41c8"
-    tenant_id           = "5c09c46b-8034-4002-8418-77ce48be97db"
+    subscription_id     = "__backend_subscription_id__"
+    tenant_id           = "__backend_tenant_id__"
     client_id           = "__backend_client_id__"
     client_secret       = "__backend_client_secret__"
     use_azuread_auth    = true
@@ -30,14 +30,14 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "b4461466-1e6b-4be2-bb70-1e96a72a41c8"
-  tenant_id       = "5c09c46b-8034-4002-8418-77ce48be97db"
+  subscription_id = "__subscription_id__"
+  tenant_id       = "__tenant_id__"
   client_id       = "__client_id__"
   client_secret   = "__client_secret__"
 }
 
 provider "azuread" {
-  tenant_id     = "5c09c46b-8034-4002-8418-77ce48be97db"
+  tenant_id     = "__tenant_id__"
   client_id     = "__client_id__"
   client_secret = "__client_secret__"
 }
