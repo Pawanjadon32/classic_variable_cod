@@ -16,10 +16,10 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "backend_resource_group_name"
-    storage_account_name = "backend_storage_account_name"
-    container_name       = "backend_container_name"
-    key                 = "key"
+    resource_group_name  = "__backend_resource_group_name__"
+    storage_account_name = "__backend_storage_account_name__"
+    container_name       = "__backend_container_name__"
+    key                 = "__key__"
     subscription_id     = "__backend_subscription_id__"
     tenant_id           = "__backend_tenant_id__"
     client_id           = "__backend_client_id__"
