@@ -31,13 +31,13 @@ terraform {
 provider "azurerm" {
   features {}
   subscription_id = "b4461466-1e6b-4be2-bb70-1e96a72a41c8"
-  tenant_id       = "__tenant_id__"
+  tenant_id       = "5c09c46b-8034-4002-8418-77ce48be97db"
   client_id       = "__client_id__"
   client_secret   = "__client_secret__"
 }
 
 provider "azuread" {
-  tenant_id     = "__tenant_id__"
+  tenant_id     = "5c09c46b-8034-4002-8418-77ce48be97db"
   client_id     = "__client_id__"
   client_secret = "__client_secret__"
 }
