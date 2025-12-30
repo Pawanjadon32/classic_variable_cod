@@ -1,1 +1,10 @@
 name: pawan_pipeline
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  terraform:
+    runs-on: 
+      - self-hosted
