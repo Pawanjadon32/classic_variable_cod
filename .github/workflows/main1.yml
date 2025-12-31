@@ -1,0 +1,20 @@
+name: pawan_pipeline
+<<<<<<< HEAD
+
+on:
+  workflow_dispatch:   # 👈 Manual trigger only
+
+jobs:
+  terraform:
+    name: Terraform Init and Plan
+    runs-on: self-hosted   # 👈 Self-hosted agent
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify Terraform
+        run: terraform --version
+
+      - name: Terraform Init
+        run: terraform init
