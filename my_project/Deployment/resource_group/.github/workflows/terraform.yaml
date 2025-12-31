@@ -1,4 +1,5 @@
 name: pawan_pipeline
+<<<<<<< HEAD
 
 on:
   workflow_dispatch:   # 👈 Manual trigger only
@@ -19,3 +20,14 @@ jobs:
         run: terraform init
 
 
+=======
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  terraform:
+    runs-on: 
+      - self-hosted
+>>>>>>> 4cd38366a678060609604427c9d3b32d6a123c62
